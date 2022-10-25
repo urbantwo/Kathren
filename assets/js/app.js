@@ -1,3 +1,5 @@
+
+
 function allarga(){
     let elem = document.getElementById('nav')
     let top = elem.getBoundingClientRect().top;
