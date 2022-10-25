@@ -1,0 +1,41 @@
+main {
+    top: 0px;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 70vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 25px;  
+}
+
+.blocco-info{
+    padding: 4vh 0 8vh 0;
+    /* background-color: greenyellow; */
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+}
+
+/* BLOCCO SX */
+.blocco-info>.sx{
+    height: 100%;
+    min-width: 200px;
+    width: 35%;
+    flex-grow: 1;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.blocco-info>.dx{
+    
+    width: 60%;
+    flex-grow: 1;
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.blocco-info>.dx>p{
+text-align: justify;
+
+}

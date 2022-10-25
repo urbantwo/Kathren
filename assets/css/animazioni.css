@@ -3,4 +3,35 @@
 
     transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);;
     transition-duration: 0.4s;
-    transition-delay: 0.2s;}
+    transition-delay: 0.2s;
+}
+
+
+@keyframes fade-in {
+
+    from{
+        transform: translateY(40px);
+        opacity: 0;
+    }
+    to{ 
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    
+    
+}
+
+@keyframes fade-divisore {
+
+    from{
+        width: 0%;
+        opacity: 0;
+    }
+    to{ 
+        width: 100%;
+        opacity: 1;
+    }
+    
+    
+}
+

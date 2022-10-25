@@ -1,5 +1,6 @@
 @import url('hero-section.css');
 @import url('animazioni.css');
+@import url('main-section.css');
 
 #nav{
     height: 60px;
@@ -27,6 +28,13 @@
     /* background-color: turquoise; */
     display: flex;
     margin: 15px 25px;
+    
+}
+
+.safe-width {
+    width: 100%;
+    max-width: 1280px;
+    margin:  15px 25px;
 }
 
 .full-width-nav {
@@ -37,7 +45,6 @@
 }
 
 body {
-    min-height: 2000px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,5 +54,14 @@ body {
 
 * {
     box-sizing: border-box;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+.divisore{
+    width: 0%;
+    max-width: 1280px;
+    height: 2px;
+    background-color: #E7E7E7;
+    animation-fill-mode: both;
 }
