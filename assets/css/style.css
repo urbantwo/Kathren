@@ -1,6 +1,7 @@
 @import url('hero-section.css');
 @import url('animazioni.css');
 @import url('main-section.css');
+@import url('led-section.css');
 
 #nav{
     height: 60px;
@@ -12,7 +13,7 @@
     top: 0px;
     margin-top: 50px;
     box-shadow: 0px 0 0px #00000000;
-    z-index: 1;
+    z-index: 100000000;
     display: flex;
     /* padding: 0 30px 0 30px; */
     justify-content: center;
