@@ -75,9 +75,28 @@ document.addEventListener('DOMContentLoaded',observerLedImg)
 
 let valoriLumen = [
     {
-        "450": { watt: 40, costo: '17,60€' },
+        450: { watt: 40, costo: '17,60€' },
         800: { watt: 60, costo: '26,40€' },
         1100: { watt: 75, costo: '33,00€' },
         1600: { watt: 100, costo: '44,00€' },
     }
 ]
+
+
+function checkboxListListener(){
+
+    let listaInput = document.querySelectorAll('input[name="intensita"]')
+
+    listaInput.forEach(el =>{
+        el.addEventListener('change',()=>{
+            if (el.checked){
+                console.log(el.value)
+
+                console.log(valoriLumen[0][el.value])
+            }
+        })
+    })
+
+}
+
+document.addEventListener('DOMContentLoaded',checkboxListListener)
