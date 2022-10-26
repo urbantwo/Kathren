@@ -21,17 +21,10 @@ function observerBloccoInfo(){
     const io = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.intersectionRatio > 0) {
-                // Add 'active' class if observation target is inside viewport
           entry.target.style.animation = '2s fade-in'
-          console.log('è visibile')
-        } else {
-            // Remove 'active' class otherwise
-            entry.target.classList.remove('active');
-        }
+        } 
     })
 })
-
-// Declares what to observe, and observes its properties.
 const boxElList = document.querySelectorAll('.blocco-info');
 boxElList.forEach((el) => {
     io.observe(el);
@@ -44,25 +37,37 @@ function observerDivisore(){
     const io = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.intersectionRatio > 0) {
-                // Add 'active' class if observation target is inside viewport
           entry.target.style.animation = '1s ease 0.4s 1 normal both running fade-divisore'
           
-          console.log('è visibile')
-        } else {
-            // Remove 'active' class otherwise
-            entry.target.classList.remove('active');
-        }
+        } 
     })
 })
 
-// Declares what to observe, and observes its properties.
 const boxElList = document.querySelectorAll('.divisore');
 boxElList.forEach((el) => {
     io.observe(el);
 })
 }
 
+function observerLedImg(){
+    
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.intersectionRatio > 0) {
+          entry.target.style.animation = '3s ease 0s 1 normal both running scale-img'
+          
+        } 
+    })
+})
+
+const boxElList = document.getElementById('img-led');
+
+    io.observe(boxElList);
+
+}
+
 
 
 document.addEventListener('DOMContentLoaded',observerBloccoInfo)
 document.addEventListener('DOMContentLoaded',observerDivisore)
+document.addEventListener('DOMContentLoaded',observerLedImg)
