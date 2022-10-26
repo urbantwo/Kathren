@@ -2,6 +2,7 @@
 @import url('animazioni.css');
 @import url('main-section.css');
 @import url('led-section.css');
+@import url('lamp-section.css');
 
 #nav{
     height: 60px;
@@ -65,4 +66,17 @@ body {
     height: 2px;
     background-color: #E7E7E7;
     animation-fill-mode: both;
+}
+
+.titolo{
+    font-size: 4em;
+    line-height: 91.7%;
+}
+
+@media only screen and (max-width: 600px) {
+    .titolo{
+        
+        line-height: 91.7%;
+        font-size: xxx-large;
+    }
 }

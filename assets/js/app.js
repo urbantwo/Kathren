@@ -21,11 +21,11 @@ function observerBloccoInfo(){
     const io = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.intersectionRatio > 0) {
-          entry.target.style.animation = '2s fade-in'
+          entry.target.style.animation = '1.8s fade-in 0.2s 1 normal both running '
         } 
     })
 })
-const boxElList = document.querySelectorAll('.blocco-info');
+const boxElList = document.querySelectorAll('.fade-in');
 boxElList.forEach((el) => {
     io.observe(el);
 })
