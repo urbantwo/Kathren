@@ -71,3 +71,13 @@ const boxElList = document.getElementById('img-led');
 document.addEventListener('DOMContentLoaded',observerBloccoInfo)
 document.addEventListener('DOMContentLoaded',observerDivisore)
 document.addEventListener('DOMContentLoaded',observerLedImg)
+
+
+let valoriLumen = [
+    {
+        "450": { watt: 40, costo: '17,60€' },
+        800: { watt: 60, costo: '26,40€' },
+        1100: { watt: 75, costo: '33,00€' },
+        1600: { watt: 100, costo: '44,00€' },
+    }
+]
