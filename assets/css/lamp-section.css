@@ -15,3 +15,11 @@
     
 }
 
+.btn-lumen{
+    
+    padding: 10px 15px;
+    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 13px rgb(10 37 64 / 17%);
+    border-radius: 10px;
+}
