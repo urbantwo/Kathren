@@ -138,3 +138,21 @@ function checkboxListListener() {
 }
 
 document.addEventListener('DOMContentLoaded', checkboxListListener)
+
+
+//TORNA SU
+
+function tornaSu(){
+    let pulsante = document.getElementById('torna-su')
+    let scroll = window.innerHeight * 1.2
+
+    if(window.scrollY > 500){
+        pulsante.classList.add('torna-su-visibile')
+    }else if (window.scrollY < 500){
+        pulsante.classList.remove('torna-su-visibile')
+
+    }
+}
+
+document.addEventListener('scroll',tornaSu)
+document.addEventListener('DOMContentLoaded',tornaSu)
