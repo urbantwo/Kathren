@@ -137,35 +137,10 @@ function checkboxListListener() {
 
 }
 
-function inizializzaCheckbox(){
-    let listaInput = document.querySelectorAll('input[name="intensita"]')
-    let listaWatt = document.querySelectorAll('.watt')
-    let listaImporto = document.querySelectorAll('.importo')
 
-    listaInput.forEach(el => {
-        el.addEventListener('change', async () => {
-            for (let i = 0; i < listaWatt.length; i++) {
-
-                let tempWatt = listaWatt[i]
-                let tempImporto = listaImporto[i]
-
-                if (el.checked) {
-
-                    let lum = valoriLumen[i][450]
-                    let tempRisultati = document.querySelectorAll('.result-elem')
-                        tempWatt.innerHTML = lum.watt + " watt"
-                        tempImporto.innerHTML = lum.costo
-
-
-                }
-            }
-        })
-    })
-
-}
 
 document.addEventListener('DOMContentLoaded', checkboxListListener)
-document.addEventListener('DOMContentLoaded', inizializzaCheckbox)
+
 
 
 //TORNA SU
