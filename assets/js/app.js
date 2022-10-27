@@ -77,26 +77,26 @@ let valoriLumen = [
 
     {
         //LED
-        450: { watt: 5, costo: '2,20€' },
-        800: { watt: 10, costo: '4,40€' },
-        1100: { watt: 13, costo: '5,70€' },
-        1600: { watt: 15, costo: '6,60€' },
+        450: { watt: 5, costo: '2,20 €' },
+        800: { watt: 10, costo: '4,40 €' },
+        1100: { watt: 13, costo: '5,70 €' },
+        1600: { watt: 15, costo: '6,60 €' },
     },
 
     {
         //Alogena
-        450: { watt: 10, costo: '4,40€' },
-        800: { watt: 13, costo: '5,70€' },
-        1100: { watt: 20, costo: '8,80€' },
-        1600: { watt: 26, costo: '11,40€' },
+        450: { watt: 10, costo: '4,40 €' },
+        800: { watt: 13, costo: '5,70 €' },
+        1100: { watt: 20, costo: '8,80 €' },
+        1600: { watt: 26, costo: '11,40 €' },
     },
 
     {
         //Incandescente
-        450: { watt: 40, costo: '17,60€' },
-        800: { watt: 60, costo: '26,40€' },
-        1100: { watt: 75, costo: '33,00€' },
-        1600: { watt: 100, costo: '44,00€' },
+        450: { watt: 40,  costo: '17,60 €' },
+        800: { watt: 60,  costo: '26,40 €' },
+        1100: { watt: 75, costo: '33,00 €' },
+        1600: { watt: 100, costo: '44,00 €' },
     }
 ]
 
@@ -137,7 +137,35 @@ function checkboxListListener() {
 
 }
 
+function inizializzaCheckbox(){
+    let listaInput = document.querySelectorAll('input[name="intensita"]')
+    let listaWatt = document.querySelectorAll('.watt')
+    let listaImporto = document.querySelectorAll('.importo')
+
+    listaInput.forEach(el => {
+        el.addEventListener('change', async () => {
+            for (let i = 0; i < listaWatt.length; i++) {
+
+                let tempWatt = listaWatt[i]
+                let tempImporto = listaImporto[i]
+
+                if (el.checked) {
+
+                    let lum = valoriLumen[i][450]
+                    let tempRisultati = document.querySelectorAll('.result-elem')
+                        tempWatt.innerHTML = lum.watt + " watt"
+                        tempImporto.innerHTML = lum.costo
+
+
+                }
+            }
+        })
+    })
+
+}
+
 document.addEventListener('DOMContentLoaded', checkboxListListener)
+document.addEventListener('DOMContentLoaded', inizializzaCheckbox)
 
 
 //TORNA SU
