@@ -4,24 +4,10 @@
 @import url('led-section.css');
 @import url('lamp-section.css');
 @import url('contatti-section.css');
+@import url('burger-menu-style.css');
 
 
-#nav{
-    height: 60px;
-    width: 70vw;
 
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    position: sticky;
-    top: 0px;
-    margin-top: 50px;
-    box-shadow: 0px 0 0px #00000000;
-    z-index: 100000000;
-    display: flex;
-    /* padding: 0 30px 0 30px; */
-    justify-content: center;
-    
-}
 .spazio{
     height: 100px;
 }
@@ -122,4 +108,48 @@ body {
 
 #torna-su > a >div {
     transform: translateY(3px);
+}
+
+
+/* NAVIGATION */
+
+#nav{
+    height: 60px;
+    width: 70vw;
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    position: sticky;
+    top: 0px;
+    margin-top: 50px;
+    box-shadow: 0px 0 0px #00000000;
+    z-index: 100000000;
+    display: flex;
+    /* padding: 0 30px 0 30px; */
+    justify-content: center;
+    
+}
+
+.nav-link{
+    align-items: center;
+    column-gap: 20px;
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
+
+.nav-link li>a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.anchor{
+    transform: translateY(-60px);
+    position: absolute;
+}
+.anchor-no-abs{
+    transform: translateY(-60px);
+
 }

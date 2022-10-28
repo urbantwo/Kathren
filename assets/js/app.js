@@ -158,4 +158,20 @@ function tornaSu(){
 }
 
 document.addEventListener('scroll',tornaSu)
+
 document.addEventListener('DOMContentLoaded',tornaSu)
+
+document.addEventListener('DOMContentLoaded',chiudiMenu)
+
+
+function chiudiMenu(){
+    let pulsanti = document.querySelectorAll('.nav-link li')
+
+    pulsanti.forEach(
+        el=>{
+            el.addEventListener('click',()=>{
+             document.getElementById('menu-hamburger').checked = false            
+            })
+            
+        })
+}

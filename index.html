@@ -28,12 +28,26 @@
         <div class="inner-nav">
 
             <img src="assets/img/KathrenLogoWhite.svg" alt="" srcset="">
-            <div class="">
-                <ul>
-                    <li><a href="">Prova</a></li>
-                    <li><a href="">Prova</a></li>
-                    <li><a href="">Prova</a></li>
+
+            <div class="hamburger">
+
+                <input type="checkbox" name="menu-hamburger" id="menu-hamburger">
+                <label style="cursor:pointer;" for="menu-hamburger">
+                    <div class="burger-zone">
+
+                        <span class></span><span></span><span></span>
+                    </div>
+                </label>
+
+
+                <ul class="nav-link">
+                    <li><a href="#servizi">Servizi</a></li>
+                    <li><a href="#led">Tecnologia LED</a></li>
+                    <li><a href="#simulatore-lampadina">Risparmio</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                    <li class="visita-store"><a href="#contatti">Visita lo store</a></li>
                 </ul>
+
             </div>
         </div>
     </nav>
@@ -68,6 +82,7 @@
         <div class="divisore"></div>
 
         <div class="blocco-info safe-width fade-in">
+            <div id="servizi" class="anchor"></div>
             <div class="sx">I nostri servizi</div>
             <div class="dx">
                 <p><strong>Abbonamenti</strong>: Scopri tutte le offerte disponibili e <strong>risparmia
@@ -91,6 +106,7 @@
     </section>
 
     <section class="led-section">
+        <div id="led" class="anchor"></div>
         <div class="led-header">
             <div class="led-text">
 
@@ -141,12 +157,14 @@
                 <p><br />
                     La quantit&agrave; di materia utilizzata nella fabbricazione dei led &egrave; molto minore rispetto
                     a prodotti tradizionali e <strong>non contengono sostanze tossiche</strong> e nocive per
-                    <strong>l&rsquo;uomo </strong>e per <strong>l&rsquo;ambiente</strong>.</p>
+                    <strong>l&rsquo;uomo </strong>e per <strong>l&rsquo;ambiente</strong>.
+                </p>
 
                 <p><br />
                     I led non irradiano calore (IR) o raggi ultravioletti (UV) per cui<strong> non influiscono
                         negativamente sulla climatizzazione</strong> dei locali dove vengono impiegati. Il bulbo
-                    <strong>&egrave; riciclabile al 100%</strong> e non contiene mercurio.</p>
+                    <strong>&egrave; riciclabile al 100%</strong> e non contiene mercurio.
+                </p>
 
 
             </div>
@@ -157,11 +175,16 @@
         <div class="blocco-info safe-width fade-in">
             <div class="sx">Il futuro dell'illuminazione</div>
             <div class="dx">
-                <p>L&#39;illuminazione a led, in continua evoluzione, prende il sopravvento su i sistemi pi&ugrave; tradizionali. Il suo processo irreversibile, visto i vantaggi che presenta, sar&agrave; accelerato da nuove normative, presto in vigore, adottate dalla UE che riguardano il divieto graduale di lampadine a incandescenza ed alogene.</p>
+                <p>L&#39;illuminazione a led, in continua evoluzione, prende il sopravvento su i sistemi pi&ugrave;
+                    tradizionali. Il suo processo irreversibile, visto i vantaggi che presenta, sar&agrave; accelerato
+                    da nuove normative, presto in vigore, adottate dalla UE che riguardano il divieto graduale di
+                    lampadine a incandescenza ed alogene.</p>
 
-<p>&nbsp;</p>
+                <p>&nbsp;</p>
 
-<p>Il led confrontato con altre fonti di illuminazione vede <strong>un risparmio di circa il 93%</strong> rispetto alle lampadine ad incandescenza, il 90% rispetto alle alogene ed il 66% rispetto alle fluorescenti.</p>
+                <p>Il led confrontato con altre fonti di illuminazione vede <strong>un risparmio di circa il
+                        93%</strong> rispetto alle lampadine ad incandescenza, il 90% rispetto alle alogene ed il 66%
+                    rispetto alle fluorescenti.</p>
 
 
             </div>
@@ -175,6 +198,7 @@
     </section>
 
     <section class="lamp-section">
+        <div id="simulatore-lampadina" class="anchor-no-abs"></div>
         <div class="safe-width titolo">
 
             Scegli la lampadina
@@ -182,16 +206,16 @@
         <div class="safe-width lumen-container">
             <input type="radio" name="intensita" value="450" id="450" checked>
             <label for="450" class="btn-lumen">450 Lumens</label>
-            
+
             <input type="radio" name="intensita" value="800" id="800">
             <label for="800" class="btn-lumen">800 Lumens</label>
-            
+
             <input type="radio" name="intensita" value="1100" id="1100">
             <label for="1100" class="btn-lumen">1100 Lumens</label>
-            
+
             <input type="radio" name="intensita" value="1600" id="1600">
             <label for="1600" class="btn-lumen">1600 Lumens</label>
-            
+
         </div>
 
         <div class="safe-width result-container fade-in">
@@ -202,8 +226,8 @@
                     <div class="watt">5 watt</div>
                 </div>
                 <div class="result-elem-sotto">
-                    <div class="importo">2,20 € </div>   
-                    <div class="">per anno</div>   
+                    <div class="importo">2,20 € </div>
+                    <div class="">per anno</div>
                 </div>
             </div>
 
@@ -214,8 +238,8 @@
                     <div class="watt">10 watt</div>
                 </div>
                 <div class="result-elem-sotto">
-                    <div class="importo">4,40 € </div>   
-                    <div class="">per anno</div>   
+                    <div class="importo">4,40 € </div>
+                    <div class="">per anno</div>
                 </div>
             </div>
 
@@ -226,41 +250,46 @@
                     <div class="watt">40 watt</div>
                 </div>
                 <div class="result-elem-sotto">
-                    <div class="importo">17,60 € </div>   
-                    <div class="">per anno</div>   
+                    <div class="importo">17,60 € </div>
+                    <div class="">per anno</div>
                 </div>
             </div>
-            
+
         </div>
     </section>
 
     <section class="contatti-section">
+        <div id="contatti" class="anchor"></div>
         <div class="safe-width">
 
-            <p class="fade-in titolo" >
+            <p class="fade-in titolo">
                 Contattaci
             </p>
         </div>
-        
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12165.180858552418!2d18.1944293!3d40.3357967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd4059329ddb871f5!2sKathren%20S.r.l.!5e0!3m2!1sit!2sit!4v1666881704009!5m2!1sit!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mappa" class="fade-in"></iframe>
 
-            <div class="divisore"></div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12165.180858552418!2d18.1944293!3d40.3357967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd4059329ddb871f5!2sKathren%20S.r.l.!5e0!3m2!1sit!2sit!4v1666881704009!5m2!1sit!2sit"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mappa"
+            class="fade-in"></iframe>
 
-            <div class="blocco-info safe-width fade-in">
-                <div class="sx">Showroom</div>
-                <div class="dx">
-                    <p>Vieni a trovarci nel nostro showroom a <strong>Lecce, in Via G. De Chirico, 2/b</strong><br />
-                        <br />
-                        Dal <strong>Luned&igrave;</strong> al <strong>Venerd&igrave;</strong><br />
-                        Mattina:&nbsp; <strong>8:30</strong> - <strong>13:00</strong><br />
-                        Pomeriggio:&nbsp; <strong>16:30</strong> - <strong>20:00</strong><br />
-                        <br />
-                        <strong>Sabato</strong><br />
-                        Solo mattina:&nbsp; <strong>8:30</strong> - <strong>13:00</strong></p>
-    
-                </div>
+        <div class="divisore"></div>
+
+        <div class="blocco-info safe-width fade-in">
+            <div class="sx">Showroom</div>
+            <div class="dx">
+                <p>Vieni a trovarci nel nostro showroom a <strong>Lecce, in Via G. De Chirico, 2/b</strong><br />
+                    <br />
+                    Dal <strong>Luned&igrave;</strong> al <strong>Venerd&igrave;</strong><br />
+                    Mattina:&nbsp; <strong>8:30</strong> - <strong>13:00</strong><br />
+                    Pomeriggio:&nbsp; <strong>16:30</strong> - <strong>20:00</strong><br />
+                    <br />
+                    <strong>Sabato</strong><br />
+                    Solo mattina:&nbsp; <strong>8:30</strong> - <strong>13:00</strong>
+                </p>
+
             </div>
-        
+        </div>
+
 
     </section>
 
