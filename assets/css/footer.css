@@ -1,0 +1,19 @@
+footer {
+
+        top: 0px;
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        background-color:#0A2540 ;
+        padding: 15px 25px;  
+        z-index: 1000;
+    }
+
+
+footer .blocco-info {
+    opacity: 1;
+    color: white;
+}
