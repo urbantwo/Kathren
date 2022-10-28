@@ -96,6 +96,10 @@
         flex-direction: column;
         row-gap: 50px;
     }
+
+    .visita-store{
+        padding: 30px !important;
+    }
     
     .hamburger input:checked~ ul.nav-link{
         transform: translateX(0%) ;
