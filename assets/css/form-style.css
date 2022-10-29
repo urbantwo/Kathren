@@ -1,0 +1,90 @@
+.form-section{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F6F9FC;    
+    overflow: hidden;
+
+    
+    padding: 50px 25px 50px 25px; 
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#form-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.riga-form{
+    
+
+}
+
+.campo-form{
+    display: flex;
+    flex-direction: column-reverse;
+    row-gap: 5px;
+    flex-grow: 1;
+}
+
+.campo-form > input{
+    height: 40px;
+    border: 0px;
+    font-size: medium;
+
+}
+
+.campo-form > textarea{
+    border: 0px;
+    font-size: medium;
+    resize: vertical;
+
+}
+
+.campo-form > input + label,.campo-form > textarea + label{
+    font-size: small;
+    font-weight: 500;
+    transform: translateX(0px);
+    opacity: 0.5;
+    transition-property: transform opacity;
+    transition-duration: 0.5s;
+    display: flex;
+    column-gap: 5px;
+}
+
+.campo-form > input:focus + label,.campo-form > textarea:focus + label{
+    transform: translateX(10px);
+    opacity: 1;
+}
+
+.campo-form > input[type='submit']{
+    width: 250px;
+    max-width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #0A2540;
+    color: white;
+}
+
+.campo-form:has(input[type='submit']){
+    align-items: flex-end;
+}
+
+
+.form-half{
+    min-width: 300px;
+
+}
+.form-full{
+    min-width: 100%;
+}
+
+.asterisco{
+    color: rgb(255, 0, 0);
+}

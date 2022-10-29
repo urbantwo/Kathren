@@ -6,6 +6,7 @@
 @import url('contatti-section.css');
 @import url('burger-menu-style.css');
 @import url('footer.css');
+@import url('form-style.css');
 
 
 
@@ -63,11 +64,18 @@ body {
     line-height: 91.7%;
 }
 
+.titolo-m{
+    font-size: x-large;
+}
+
 @media only screen and (max-width: 600px) {
     .titolo{
         
         line-height: 91.7%;
         font-size: xxx-large;
+    }
+    .titolo-m{
+    
     }
 }
 

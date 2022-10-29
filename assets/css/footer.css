@@ -17,3 +17,20 @@ footer .blocco-info {
     opacity: 1;
     color: white;
 }
+
+.info-footer{
+    color: white;
+}
+
+.info-footer div:nth-child(1){
+    height: 2px;
+    width: 100%;
+    background-color: white;
+}
+
+.info-footer div:nth-child(2){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-weight: 200;
+}

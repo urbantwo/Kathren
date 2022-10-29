@@ -17,6 +17,7 @@
     flex-wrap: wrap;
     min-height: 100px;
     opacity: 0;
+    column-gap: 30px;
 }
 
 /* BLOCCO SX */
