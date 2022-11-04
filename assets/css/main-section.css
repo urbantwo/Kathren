@@ -18,7 +18,9 @@
     min-height: 100px;
     opacity: 0;
     column-gap: 30px;
+    row-gap: 30px;
 }
+
 
 /* BLOCCO SX */
 .blocco-info>.sx{
@@ -29,6 +31,14 @@
     font-size: 1.4em;
     font-weight: 700;
 }
+
+.blocco-info>div.sx >h2 {
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 0px;
+
+}
+
 .blocco-info>.dx{
     
     width: 60%;

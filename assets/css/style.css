@@ -64,6 +64,13 @@ body {
     line-height: 91.7%;
 }
 
+.titolo > h1 {
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 85%;
+    margin: 0;
+}
+
 .titolo-m{
     font-size: x-large;
 }

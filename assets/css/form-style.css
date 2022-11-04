@@ -37,6 +37,7 @@
     height: 40px;
     border: 0px;
     font-size: medium;
+    padding: 15px;
 
 }
 
@@ -44,6 +45,7 @@
     border: 0px;
     font-size: medium;
     resize: vertical;
+    padding: 15px;
 
 }
 
@@ -70,11 +72,24 @@
     border-radius: 10px;
     background-color: #0A2540;
     color: white;
+
+    transform: translateY(0px);
+    transition-property: transform shadow ;
+    transition-duration: 0.3s ;
+    box-shadow: 0px 0px 0px 0px #0b264100;;
+    padding: 0px !important;
+
+}
+
+.campo-form > input[type='submit']:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px 0px #0b264166;
 }
 
 .campo-form:has(input[type='submit']){
     align-items: flex-end;
 }
+
 
 
 .form-half{

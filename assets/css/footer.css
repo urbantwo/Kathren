@@ -34,3 +34,67 @@ footer .blocco-info {
     justify-content: space-between;
     font-weight: 200;
 }
+.form-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.flex-row{
+    flex-direction: row !important;
+    align-items: center;
+}
+
+.form-footer > .campo-form > input[type='submit'] {
+    background-color: white;
+
+}
+
+.blocco-info>.dx-footer {
+    width: 60%;
+    flex-grow: 1;
+    font-size: 1em;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.dx-footer >p {
+    margin: 0;
+}
+
+.form-footer div:first-child {
+    min-width: 200px;
+    flex-grow: 1;
+    display: flex;
+    column-gap: 15px;
+}
+
+.form-footer div:first-child .campo-form + input[type='submit']{
+  
+    max-width: 100%;
+    cursor: pointer;
+    background-color: #7beacb;
+    color: #1b6651;
+    transition-property: transform shadow;
+    padding: 0px 20px !important;
+    height: 40px;
+    border: 0;
+    align-self: flex-end;
+}
+
+.form-footer  .campo-form > input[type='text']{
+    background-color: transparent;
+    border-bottom: 2px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    color: white;
+}
+
+.form-footer  .campo-form > input[type='text']::placeholder{
+    color: white;
+    opacity: 0.5;
+}
