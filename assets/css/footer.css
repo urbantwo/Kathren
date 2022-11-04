@@ -96,5 +96,5 @@ footer .blocco-info {
 
 .form-footer  .campo-form > input[type='text']::placeholder{
     color: white;
-    opacity: 0.5;
+    opacity: 0.6;
 }
